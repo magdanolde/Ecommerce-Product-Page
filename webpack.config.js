@@ -24,7 +24,7 @@ module.exports = {
         // ma być wykorzystany
       },
       {
-        test: /\.css$/i,
+        test: /\.s[ac]ss$/,
         // wszystkie pliki, których nazwa
         // kończy się na .css
         use: [
@@ -33,10 +33,16 @@ module.exports = {
           // do znacznika <style/>
           "css-loader",
           // odczytaj plik CSS
+          // Compiles Sass to CSS
+          "sass-loader",
         ],
       },
       {
         test: /\.(jpg|png)$/,
+        use: ["url-loader"],
+      },
+      {
+        test: /\.svg$/i,
         use: ["url-loader"],
       },
     ],
