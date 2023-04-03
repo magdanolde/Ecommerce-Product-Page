@@ -3,6 +3,7 @@ import { useState } from "react";
 import Next from "../images/icon-next.svg";
 import Prev from "../images/icon-previous.svg";
 
+
 const slideStyles = {
   width: "100%",
   height: "100%",
