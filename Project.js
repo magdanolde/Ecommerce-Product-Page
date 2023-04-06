@@ -22,6 +22,10 @@ function Project() {
   const addToCart = () => {
     setCart([...cart, count]);
   };
+  
+  const deleteItems = () => {
+    setCart([]);
+  };
 
   const Total = cart.reduce(add, 0);
 
@@ -42,6 +46,7 @@ function Project() {
           cart,
           Total,
           addToCart,
+          deleteItems,
           incrementCount,
           decrementCount,
         }}

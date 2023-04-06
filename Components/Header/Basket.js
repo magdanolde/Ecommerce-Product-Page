@@ -1,19 +1,28 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Context } from "../contexts/TasksContext";
 import Cart from "../../images/icon-cart.svg";
 import Thumbnail from "../../images/image-product-1-thumbnail.jpg";
 import Delete from "../../images/icon-delete.svg";
 
 const Basket = () => {
-  const { Total } = useContext(Context);
+  let { Total, deleteItems } = useContext(Context);
+  const [purchase, togglePurchase] = useState(false);
 
   function calculateTotal(a, b) {
     return a * b;
   }
+
+  // function toggleCart {
+  // }
   return (
     <>
       <div className="header__cart">
-        <img src={Cart} alt="cart" className="header__cart--icon" />
+        <img
+          src={Cart}
+          alt="cart"
+          className="header__cart--icon"
+          onClick={() => togglePurchase(!purchase)}
+        />
         <div
           className={
             Total > 0 ? "header__cart--items active" : "header__cart--items"
@@ -22,7 +31,11 @@ const Basket = () => {
           {Total}
         </div>
       </div>
-      <dialog className="header__modal">
+      <dialog
+        className={
+          purchase && Total > 0 ? "header__modal active" : "header__modal"
+        }
+      >
         <div className="modal__name">
           <p className="modal__name--text">Cart</p>
         </div>
@@ -32,18 +45,37 @@ const Basket = () => {
             className="modal__foto"
             alt="thumbnail product cart"
           />
-          <p>Fall Limited Edition Sneakers</p>
+          <p className="modal__title">Fall Limited Edition Sneakers</p>
           <div className="modal__price">
             <p>$125.00 x</p>
-            <p>{Total}</p>
-            <p>${calculateTotal(125, Total)}</p>
+            <p className="modal__price--total">{Total}</p>
+            <p className="modal__price--bold">
+              $
+              {calculateTotal(125, Total).toLocaleString("en-US", {
+                maximumFractionDigits: 2,
+                minimumFractionDigits: 2,
+              })}
+            </p>
           </div>
           <img
             src={Delete}
+            onClick={deleteItems}
             className="modal__delete"
             alt="bin icon remove product"
           />
-          <button className="modal__button">Checkout</button>
+        </div>
+        <button className="modal__button">Checkout</button>
+      </dialog>
+      <dialog
+        className={
+          purchase && Total <= 0 ? "header__modal active" : "header__modal"
+        }
+      >
+        <div className="modal__name">
+          <p className="modal__name--text">Cart</p>
+        </div>
+        <div className="modal__final">
+          <p className="modal__final--text">Your cart is empty.</p>
         </div>
       </dialog>
     </>

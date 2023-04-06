@@ -23,13 +23,13 @@ function Nav() {
           hiddenMenu ? "header__nav--wrapper" : "header__nav--wrapper active"
         }
       >
-        <img
-          className="header__icon-mobile-close"
-          src={Close}
-          alt="mobile menu close"
-          onClick={() => setHiddenMenu(!hiddenMenu)}
-        />
         <ul className="header__nav">
+          <img
+            className={"header__icon-mobile-close"}
+            src={Close}
+            alt="mobile menu close"
+            onClick={() => setHiddenMenu(!hiddenMenu)}
+          />
           {NavItems.map((item, index) => {
             return (
               <li className={item.cNameLi} key={index}>
