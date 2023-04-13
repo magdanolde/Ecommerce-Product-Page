@@ -1,7 +1,8 @@
 import React from "react";
 import Logo from "../../images/logo.svg";
-import Avatar from "../../images/image-avatar.png";
+
 import Nav from "../Navbar/Nav";
+import Avatar from "./Avatar";
 import Basket from "./Basket";
 import "../../scss/styles.scss";
 
@@ -11,9 +12,10 @@ function Header() {
       <Nav />
       <img src={Logo} alt="logo" className="header__logo" />
       <Basket />
-      <img src={Avatar} alt="avatar" className="header__avatar" />
+      <Avatar />
     </section>
   );
 }
 
 export default Header;
+

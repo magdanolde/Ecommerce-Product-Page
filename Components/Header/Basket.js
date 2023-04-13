@@ -12,8 +12,6 @@ const Basket = () => {
     return a * b;
   }
 
-  // function toggleCart {
-  // }
   return (
     <>
       <div className="header__cart">
