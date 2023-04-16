@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Header from "./Components/Header/Header";
 import Slider from "./Components/Slider";
-import Main from "./Components/Main";
 import Price from "./Components/Price/Price";
 import { Context } from "./Components/contexts/TasksContext";
 
@@ -22,7 +21,7 @@ function Project() {
   const addToCart = () => {
     setCart([...cart, count]);
   };
-  
+
   const deleteItems = () => {
     setCart([]);
   };
@@ -52,9 +51,10 @@ function Project() {
         }}
       >
         <Header />
-        <Slider slides={slides} />
-        <Main />
-        <Price />
+        <div className="compontent__wrapper">
+          <Slider slides={slides} />
+          <Price />
+        </div>
       </Context.Provider>
     </>
   );

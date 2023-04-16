@@ -92,6 +92,11 @@ body{
     &__avatar {
         height: 30px;
         width: 30px;
+        
+        .header__avatar--pic {
+            height: 100%;
+            width: 100%;
+        }
     }
 
 
@@ -274,13 +279,16 @@ body{
     &__arrow {
         z-index: 2
     }
+
+    &__gallery {
+        display: none;
+    }
        
 }
 
 
 .main {
     &__wrapper {
-        max-width: 90%;
         margin: 0 auto;
     }
 

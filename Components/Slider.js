@@ -9,6 +9,7 @@ const slideStyles = {
   height: "100%",
   backgroundSize: "cover",
   backgroundPosition: "center",
+  // borderRadius: "10px",
 };
 
 const Slider = ({ slides }) => {
@@ -47,6 +48,7 @@ const Slider = ({ slides }) => {
         </div>
         <div style={slideStylesWidthBackground}></div>
       </div>
+      <div className="slider__gallery">{renderGallery}</div>
     </section>
   );
 };
