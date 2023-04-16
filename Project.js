@@ -9,7 +9,7 @@ function Project() {
     { url: "./images/image-product-1.jpg", title: "sneaker1" },
     { url: "./images/image-product-2.jpg", title: "sneaker2" },
     { url: "./images/image-product-3.jpg", title: "sneaker3" },
-    { url: "./images/image-product-4.jpg", title: "city" },
+    { url: "./images/image-product-4.jpg", title: "sneaker4" },
   ];
 
   const [count, setCount] = useState(0);
@@ -48,11 +48,12 @@ function Project() {
           deleteItems,
           incrementCount,
           decrementCount,
+          slides,
         }}
       >
         <Header />
         <div className="compontent__wrapper">
-          <Slider slides={slides} />
+          <Slider items={slides} />
           <Price />
         </div>
       </Context.Provider>
