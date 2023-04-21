@@ -48,7 +48,6 @@ const Basket = () => {
             <p>$125.00 x</p>
             <p className="modal__price--total">{Total}</p>
             <p className="modal__price--bold">
-              $
               {calculateTotal(125, Total).toLocaleString("en-US", {
                 maximumFractionDigits: 2,
                 minimumFractionDigits: 2,

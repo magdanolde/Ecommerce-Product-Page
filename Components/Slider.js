@@ -3,7 +3,7 @@ import { useState, useContext } from "react";
 import Next from "../images/icon-next.svg";
 import Prev from "../images/icon-previous.svg";
 import { Context } from "../Components/contexts/TasksContext";
-//
+
 const slideStyles = {
   width: "100%",
   height: "100%",
@@ -12,8 +12,9 @@ const slideStyles = {
 };
 
 const Slider = ({ items }) => {
-  let { slides } = useContext(Context);
+  let { slides, setIsOpen } = useContext(Context);
   const [currentIndex, setCurrentIndex] = useState(0);
+
   const goToPrevious = () => {
     const isFirstSlide = currentIndex === 0;
     const newIndex = isFirstSlide ? items.length - 1 : currentIndex - 1;
@@ -50,9 +51,10 @@ const Slider = ({ items }) => {
       );
     });
   }
+
   return (
     <section className="slider">
-      <div className="slider__wrapper">
+      <div className="slider__wrapper" onClick={()=>setIsOpen(true)}>
         <div className="slider__circle--left">
           <img
             src={Prev}

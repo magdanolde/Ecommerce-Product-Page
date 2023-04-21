@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Header from "./Components/Header/Header";
 import Slider from "./Components/Slider";
 import Price from "./Components/Price/Price";
+import Lightbox from "./Components/Lightbox";
 import { Context } from "./Components/contexts/TasksContext";
 
 function Project() {
@@ -14,6 +15,7 @@ function Project() {
 
   const [count, setCount] = useState(0);
   const [cart, setCart] = useState([count]);
+  const [isOpen, setIsOpen] = useState(false);
 
   function add(accumulator, a) {
     return accumulator + a;
@@ -25,6 +27,7 @@ function Project() {
   const deleteItems = () => {
     setCart([]);
   };
+
 
   const Total = cart.reduce(add, 0);
 
@@ -49,11 +52,13 @@ function Project() {
           incrementCount,
           decrementCount,
           slides,
+          setIsOpen,
         }}
       >
         <Header />
         <div className="compontent__wrapper">
           <Slider items={slides} />
+          <Lightbox LightBoxItems={slides} open={isOpen} />
           <Price />
         </div>
       </Context.Provider>
