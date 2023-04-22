@@ -1,5 +1,3 @@
-![Design preview for the E-commerce product page coding challenge](./design/desktop-preview.jpg)
-
 ## E-COMMERCE PRODUCT PAGE
 
 ### :shell: PROJECT IN A NUTSHELL
