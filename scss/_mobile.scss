@@ -120,15 +120,16 @@ body{
     &__modal {
 
         display: none;
-        &.active {background-color: $color-mu;
-        height: 300px;
-        width: calc(100% - 16px);
-        display: block;
-        position: absolute;
-        z-index: 105;
-        border-radius: 10px;
-        margin: 0 auto;
-        top: 100px;
+        &.active {
+            background-color: $color-mu;
+            height: 300px;
+            width: calc(100% - 16px);
+            display: block;
+            position: absolute;
+            z-index: 105;
+            border-radius: 10px;
+            margin: 0 auto;
+            top: 100px;
         }
 
         .modal__name {
