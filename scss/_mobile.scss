@@ -3,12 +3,9 @@ body{
 }
 
 .header {
-    max-height: 20vh;
     display: grid;
     grid-template-columns: 1.4fr 10fr 2fr 1fr;
     padding: 7% 6%;
-    align-content: center;
-    justify-content: center;
 
     &__wrapper {
         display: flex;
@@ -94,7 +91,6 @@ body{
         width: 30px;
         
         .header__avatar--pic {
-            height: 100%;
             width: 100%;
         }
     }
@@ -244,14 +240,14 @@ body{
         height: 100%;
     }
 
-    &__circle--right {
+    &__circle--right,
+    &__circle--left {
         position: absolute;
         top: 50%;
         transform: translate(0, -50%);
         z-index: 1;
         cursor: pointer;
         background-color: $color-mu;
-        right: 18px;
         border-radius: 50%;
         width: 40px;
         height: 40px;
@@ -262,19 +258,14 @@ body{
     }
 
     &__circle--left {
-        position: absolute;
-        top: 50%;
-        transform: translate(0, -50%);
-        z-index: 1;
-        cursor: pointer;
         left: 18px;
-        background-color: $color-mu;
-        border-radius: 50%;
-        width: 40px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+
+    } 
+
+    
+    &__circle--right {
+        right: 18px;
+
     } 
     
     &__arrow {
@@ -290,9 +281,6 @@ body{
 
 
 .main {
-    &__wrapper {
-        margin: 0 auto;
-    }
 
     &__company {
         color: $color-alpha;
@@ -322,7 +310,6 @@ body{
         display: grid;
         grid-template-columns: 2fr 2.5fr 1fr;
         align-items: center;
-        justify-content: center;
     }
 
     &__old {
@@ -358,7 +345,6 @@ body{
         display: grid;
         grid-template-columns: 2fr 5fr 2fr;
         align-items: center;
-        justify-content: center;
         margin-bottom: 15px;
 
         .items__number {
