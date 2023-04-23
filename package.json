@@ -3,10 +3,14 @@
   "version": "1.0.0",
   "description": "![Design preview for the E-commerce product page coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
+  "repository": {
+    "url": "git+https://github.com/{magdanolde}/{Ecommerce-Product-Page}.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --mode development --open",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +21,7 @@
     "@babel/preset-react": "^7.18.6",
     "babel-loader": "^8.3.0",
     "css-loader": "^6.7.3",
+    "gh-pages": "^5.0.0",
     "html-webpack-plugin": "^5.5.0",
     "sass": "^1.59.3",
     "sass-loader": "^13.2.0",
