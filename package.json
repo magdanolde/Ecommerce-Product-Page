@@ -6,6 +6,7 @@
   "repository": {
     "url": "git+https://github.com/{magdanolde}/{Ecommerce-Product-Page}.git"
   },
+  "homepage": "http://magdanolde.github.io/Ecommerce-Product-Page",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --mode development --open",
