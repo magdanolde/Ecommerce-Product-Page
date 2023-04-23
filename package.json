@@ -4,13 +4,14 @@
   "description": "![Design preview for the E-commerce product page coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
   "repository": {
-    "url": "git+https://{magdanolde}.github.io/{Ecommerce-Product-Page}"
+    "url": "git+https://github.com/{magdanolde}/{Ecommerce-Product-Page}.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --mode development --open",
     "build": "webpack --mode production",
-    "deploy": "gh-pages -d dist"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
