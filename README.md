@@ -10,7 +10,7 @@ This challenge was to build out an e-commerce product page and get it looking as
 Users should be able to:
 
 * View the optimal layout depending on their device's screen size
-* See hover states for all interactive elements on the page
+* See hover states for interactive elements on the page
 * Open a lightbox gallery by clicking on the large product image
 * Switch the large product image by clicking on the small thumbnail images
 * Add items to the cart
@@ -31,8 +31,9 @@ You can use any tools you like to help you complete the challenge, so decided to
 
 I refreshed my knowledge in React Hooks (UseState & UseContext). Especially UseContext was very helpful within this project.
 
-Initially I wanted to use Redux but after watching this![video](https://www.youtube.com/watch?v=poQXNp9ItL4&t=5093s), I decided that for this project it does it make sense.
-It is a small app, with quite simple UI and static data, so there is no point for overengineering. I will build another app, whereby I can focus on Redux.
+Initially I wanted to use Redux but after watching this ![video](https://www.youtube.com/watch?v=poQXNp9ItL4&t=5093s), I decided that for this project it does it make sense.
+It is a small app, with quite simple UI and static data, so there is no point for overengineering. I will build another app, where I can focus on Redux.
+Or make this one bigger as a separate project, with more products.
 
 ###  SOLUTIONS I STILL WANT TO ADD 
 
@@ -48,6 +49,7 @@ It is a small app, with quite simple UI and static data, so there is no point fo
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 
 
 ### 🤝 SPECIALTHANKS
