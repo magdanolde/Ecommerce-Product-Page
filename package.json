@@ -4,9 +4,9 @@
   "description": "![Design preview for the E-commerce product page coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
   "repository": {
-    "url": "git+https://github.com/{magdanolde}/{Ecommerce-Product-Page}.git"
+    "url": "git+https://github.com/{magdanolde}/{Ecommerce-Product-Page}.git",
+    "homepage": "http://magdanolde.github.io/Ecommerce-Product-Page"
   },
-  "homepage": "http://magdanolde.github.io/Ecommerce-Product-Page",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --mode development --open",
