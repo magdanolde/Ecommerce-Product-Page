@@ -46,7 +46,7 @@ const Slider = ({ items }) => {
           }
           onClick={() => goToSlide(slideIndex)}
         >
-          <img className="gallery__img" src={item.url} />
+          <img className="gallery__img" src={item.url} alt="gallery foto"/>
         </div>
       );
     });

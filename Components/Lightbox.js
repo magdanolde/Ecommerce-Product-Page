@@ -52,7 +52,7 @@ const Lightbox = ({ LightBoxItems, open }) => {
           }
           onClick={() => goToSlide(slideIndex)}
         >
-          <img className="gallery__img" src={item.url} />
+          <img className="gallery__img" src={item.url} alt="gallery foto" />
         </div>
       );
     });
@@ -79,6 +79,7 @@ const Lightbox = ({ LightBoxItems, open }) => {
             src={Prev}
             className="lightbox__arrow--left"
             onClick={goToPrevious}
+            alt="arrow left"
           />
         </div>
         <div className="lightbox__circle--right">
@@ -86,6 +87,7 @@ const Lightbox = ({ LightBoxItems, open }) => {
             src={Next}
             className="lightbox__arrow--right"
             onClick={goToNext}
+            alt="arrow right"
           />
         </div>
         <div className="lightbox__gallery">{renderGallery()}</div>
