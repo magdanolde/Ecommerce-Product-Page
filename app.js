@@ -1,6 +1,6 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import Project from "./Project";
+import ReactDOM from "react-dom/client";
 
 function App() {
   return (
