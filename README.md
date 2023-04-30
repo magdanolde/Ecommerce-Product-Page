@@ -47,21 +47,21 @@ Or make this one bigger as a separate project, with more products.
 To get a local copy up and running follow these simple steps.
 Prerequisites
 
-    npm
+npm
 
     npm install npm@latest -g
 
 Installation
 
-    Clone the repo
+Clone the repo
 
-    git clone git@github.com:sophiavf/Project-Weather-App.git
+    git clone git@github.com:magdanolde/Ecommerce-Product-Page.git
 
-    Install NPM packages
+Install NPM packages
 
     npm install
 
-    Run the development server to start a local demo of the project
+Run the development server to start a local demo of the project
 
     npm start
 
