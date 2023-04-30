@@ -44,6 +44,27 @@ Or make this one bigger as a separate project, with more products.
 
 ![Design preview for the E-commerce product page coding challenge](./design/desktop-preview.jpg)
 
+To get a local copy up and running follow these simple steps.
+Prerequisites
+
+    npm
+
+    npm install npm@latest -g
+
+Installation
+
+    Clone the repo
+
+    git clone git@github.com:sophiavf/Project-Weather-App.git
+
+    Install NPM packages
+
+    npm install
+
+    Run the development server to start a local demo of the project
+
+    npm start
+
 
 ### 💻 TECHNOLOGIES
 
