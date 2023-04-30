@@ -45,13 +45,11 @@ Or make this one bigger as a separate project, with more products.
 ![Design preview for the E-commerce product page coding challenge](./design/desktop-preview.jpg)
 
 To get a local copy up and running follow these simple steps.
-Prerequisites
-
-npm
+Prerequisites: npm
 
     npm install npm@latest -g
 
-Installation
+#### Installation
 
 Clone the repo
 
