@@ -43,6 +43,7 @@ Or make this one bigger as a separate project, with more products.
 ### :boom: PROJECT LIVE 
 
 ![FotoEcomm1](https://user-images.githubusercontent.com/83141358/236021773-772f95ce-87c4-421c-ac15-498d07f25ea9.PNG)
+![FotoEcomm2](https://user-images.githubusercontent.com/83141358/236022206-f5784200-9fe6-4a6c-bf8a-ed9cadfc168b.PNG)
 
 To get a local copy up and running follow these simple steps.
 Prerequisites: npm
