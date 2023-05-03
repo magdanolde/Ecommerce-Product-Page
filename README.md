@@ -42,7 +42,7 @@ Or make this one bigger as a separate project, with more products.
 
 ### :boom: PROJECT LIVE 
 
-![Design preview for the E-commerce product page coding challenge](./design/desktop-preview.jpg)
+![FotoEcomm1](https://user-images.githubusercontent.com/83141358/236021773-772f95ce-87c4-421c-ac15-498d07f25ea9.PNG)
 
 To get a local copy up and running follow these simple steps.
 Prerequisites: npm
